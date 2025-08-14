@@ -94,8 +94,7 @@
 
   // ----- 进取号图像（保持原比例） -----
   const shipImg = new Image();
-  shipImg.crossOrigin = "anonymous";
-  shipImg.src = "https://static.wikia.nocookie.net/startrek/images/d/d0/Constitution_refit_side.png/revision/latest?cb=20250802132832";
+  shipImg.src = "./Constitution_refit_side.webp"
   let shipReady = false, shipRatio = 3; // 宽高比
   shipImg.onload = () => { shipReady = true; shipRatio = shipImg.naturalWidth / shipImg.naturalHeight; };
 
