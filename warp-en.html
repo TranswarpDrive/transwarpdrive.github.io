@@ -91,8 +91,7 @@
   resizeCanvas();
 
   const shipImg = new Image();
-  shipImg.crossOrigin = "anonymous";
-  shipImg.src = "https://static.wikia.nocookie.net/startrek/images/d/d0/Constitution_refit_side.png/revision/latest?cb=20250802132832";
+  shipImg.src = "./Constitution_refit_side.webp";
   let shipReady = false, shipRatio = 3;
   shipImg.onload = () => { shipReady = true; shipRatio = shipImg.naturalWidth / shipImg.naturalHeight; };
 
